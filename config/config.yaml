@@ -1,0 +1,22 @@
+ingestion:
+  sample_rate: 16000
+  iemocap_dir: "data/raw/IEMOCAP_full_release"
+  processed_audio_dir: "data/processed/iemocap_audio"
+  iemocap_label_map:
+    hap: 0
+    sad: 1
+    ang: 2
+    neu: 3
+  output_path: "artifacts/data_ingestion/unified_dataset.parquet"
+transformation:
+  output_dir: artifacts/data_transformation
+
+trainer:
+  model_name_text: "distilbert-base-uncased"
+  model_name_speech: "facebook/wav2vec2-base"
+  output_dir: "artifacts/model_trainer"
+  max_epochs: 3
+  batch_size: 16
+  lr: 5e-5
+  transformed_path: artifacts/data_transformation/transformed_dataset.parquet
+
