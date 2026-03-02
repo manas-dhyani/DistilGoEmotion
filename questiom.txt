@@ -1,0 +1,16 @@
+difference between conda yarn and pip wheel curl 
+git pull and push 
+git commands  git remote add origin 
+git config global
+git status 
+why we create setup.py
+what is -e . what is this
+
+
+git commit -m "setup"     python -m venv venv         .\venv\Scripts\activate
+
+Index(['file', 'audio', 'frustrated', 'angry', 'sad', 'disgust', 'excited',
+       'fear', 'neutral', 'surprise', 'happy', 'EmoAct', 'EmoVal', 'EmoDom',
+       'gender', 'transcription', 'major_emotion', 'speaking_rate',
+       'pitch_mean', 'pitch_std', 'rms', 'relative_db'],
+      dtype='object')

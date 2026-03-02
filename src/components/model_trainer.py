@@ -167,8 +167,8 @@ class UnifiedModelTrainer:
         df = pd.read_parquet(parquet_path)
         print(f"Data shape: {df.shape}")
 
-        if "text" in df["modality"].values:
-            self.train_text_model(df)
+        # if "text" in df["modality"].values:
+        #     self.train_text_model(df)
 
         if "speech" in df["modality"].values:
             self.train_speech_model(df)
